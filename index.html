@@ -91,22 +91,104 @@
         }
     </style>
 
+    <!-- css for bio -->
+    <style type="text/css">
+        div.bio{
+            font-size:1.2em;
+        }
+        div.bio > div.left{
+            float:left;
+            width:250px;
+        }
+        div.bio > div.left > img.me{
+            max-height:260px;
+            margin:10px;
+            max-width:230px;
+            margin-top:20px;
+            margin-left:0px;
+        }
 
-	<div id="header", align="center">
-        <div id="info">
-            <img src="./images/jieru.jpg" width=200px />
-            <h1>Jieru Zhao (赵杰茹)</h1></br>
-            <span id="title">Ph.D. at HKUST</span></br>
-            <a href="https://www.ece.ust.hk/">Department of Electronic and Computer Engineering</a></br>
-            <a href="https://www.ust.hk/">The Hong Kong University of Science and Technology</a></br>
-            <p>Email: jzhaoao AT connect.ust.hk<br /></p>        
-            <!-- <img src="img/addr.png" id="addr"> -->
+        div.bio > div.right{
+            margin:0 0 0 260px;
+            min-height:300px;
+        }
+        div.bio > div.right > div.line.name{
+            padding:15px 0;
+            line-height:40px;
+        }
+        div.bio > div.right > div.name > span.name, div.bio > div.right > div.name > span.chineseName{
+            font-size:2em;
+            font-weight:bold;
+        }
+        div.bio > div.right > div.name > span.chinesesName{
+            font-family:"Microsoft YaHei",微软雅黑,宋体,Helvetica,arial;
+        }
+        div.bio > div.right > div.name > span.misc{
+            font-size:1.5em;
+            font-weight:bold;
+        }
+        div.bio > div.right > div.line.affliation{
+            padding:5px 0;
+        }  
+
+    </style>
+
+    <div class="content bio">
+        <div class="left">
+            <img class='me' src="./images/jieru.jpg"></img><br/>
+            <!-- <a class="quickLink" href="https://scholar.google.com/citations?hl=en&user=bMedjfUAAAAJ">
+                <img class='scholar' style="" src="resources/googlescholar.png"></img>
+            </a>
+            <a class="quickLink" href="https://github.com/JunweiLiang">
+                <img class='github' style="" src="resources/github.png"></img>
+            </a>
+            <a class="quickLink" href="https://twitter.com/JunweilLiang">
+                <img class='twitter' style="" src="resources/twitter.png"></img>
+            </a>
+            <a class="quickLink" href="https://www.linkedin.com/in/junweiliang/">
+                <img class='linkedin' style="" src="resources/linkedin.png"></img>
+            </a>
+            <a class="quickLink" href="https://www.semanticscholar.org/author/Junwei-Liang/1915796">
+                <img class='semanticscholar' style="height:25px" src="resources/semantic_scholar.png"></img>
+            </a>
+            <br/>
+            <a class="quickLink" href="https://medium.com/@junweil">
+                <img class='medium' style="" src="resources/medium.png"></img>
+            </a>
+            <a class="quickLink" href="https://www.zhihu.com/people/junwei-liang-50">
+                <img class='zhihu' style="height:25px" title="My Zhihu page" src="resources/zhihu.png"></img>
+            </a>
+            <a class="quickLink" href="https://www.youtube.com/channel/UC-z7ZWp8Rbu2xhxnbAL_bRQ">
+                <img class='youtube' style="height:20px" title="My Youtube channel" src="resources/yt.png"></img>
+            </a>
+            <a class="quickLink" href="https://www.researchgate.net/profile/Junwei_Liang3">
+                <img class='researchgate' style="height:25px" src="resources/rg.png"></img>
+            </a>
+            <a class="quickLink" href="https://dblp.org/pers/hd/l/Liang_0001:Junwei">
+                <img class='dblp' style="height:20px" src="resources/dblp.png"></img>
+            </a> -->
         </div>
-            <!-- <a href="https://dblp.uni-trier.de/pers/hd/c/Chen:Gengjie"><img src="./images/logo-dblp.png"  height="30px"></a>
-            <a href="https://scholar.google.com/citations?user=blVJ7usAAAAJ"><img src="./images/logo-scholar.png"  height="30px"></a>
-            <a href="https://github.com/chengengjie"><img src="./images/logo-github.png"  height="30px"></a>
-            <a href="https://www.linkedin.com/in/gengjie-chen-4b79b2a9/"><img src="./images/logo-linkedin.png"  height="30px"></a> -->
+        <div class="right">
+            <div class="line name">
+                <span class="name">Jieru Zhao</span>
+                <span class="misc">Ph.D. Candidate</span> &nbsp; &nbsp; &nbsp;
+                <span class="chineseName">（赵杰茹）</span>
+            </div>
+            <div class="affliation">
+                <p> Ph.D. at HKUST</p><br/>
+                <a href="https://www.ece.ust.hk/">Department of Electronic and Computer Engineering</a></br>
+                <a href="https://www.ust.hk/">The Hong Kong University of Science and Technology</a></br>
+                <p>Email: jzhaoao@connect.ust.hk<br /></p> 
+            </div>            
+            <div class="line office">
+                Office: Gates and Hillman Centers 5513
+            </div>
+            <div class="line office">
+            My academic blog on <a href="https://medium.com/@junweil">Medium</a>.
+            </div>
+        </div>
     </div>
+
 
     <!-- <div id="bio" class="center_align main_blocks">
 		<div class="subtitle">Short Bio</div>
