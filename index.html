@@ -17,7 +17,7 @@
 <body>
     <style type='text/css'>
         body{
-            font-family:arial,"Simsum",Helvetica;
+            font-family:Arial,"Simsum";
             font-size:15px;
         }
         /*
@@ -26,9 +26,9 @@
         */
         body div.content{
             /*width:1280px;*/
-            width:1000px;
+            width:905px;
             margin:0 auto;
-            line-height:30px;
+            line-height:25px;
         }
         /*
             header wrapper
@@ -68,72 +68,81 @@
         }
         div.content > div.title{
             padding:20px 0;
-            border-top:1px silver solid;
-            margin-top:30px;
-            font-size:2em;
+            /* border-top:1px silver solid; */
+            margin-top:0px;
+            font-size:1.4em;
             font-weight:bold;
+            line-height:1px;
         }
         body a{
-            color:#004C99;
+            color:#08306b;
+            /* #004C99; */
             text-decoration:none;
         }
         div.content ul{
-            list-style: disc inside none;
+            list-style: square outside none;
+            padding-left:30px;
         }
         div.content ol{
-            list-style: none inside none;
+            list-style: square outside none;
+            padding-left:30px;
         }
         div.content li{
-            line-height:30px;
-            padding-bottom:5px;
+            line-height:23px;
+            padding-bottom:2px;
         }
         div.content div.float-right{
             float:right;
         }
     </style>
 
+    <style>
+        hr.new {
+        border-top: 1.3px silver solid;
+        /* padding-top:10px; */
+        }
+    </style>
+
+    </style>
+    <!-- publications -->
+    <style type="text/css">
+        div.publications > ol > li{
+            padding-bottom: 18px;
+        }
+    </style>
+
     <!-- css for bio -->
     <style type="text/css">
-        div.bio{
-            font-size:1.2em;
-        }
         div.bio > div.left{
             float:left;
-            width:250px;
+            width:280px;
         }
         div.bio > div.left > img.me{
-            max-height:260px;
+            /* max-height:260px; */
             margin:10px;
-            max-width:230px;
+            /* max-width:230px; */
             margin-top:20px;
             margin-left:0px;
         }
 
         div.bio > div.right{
-            margin:20px 0 0 300px;
-            min-height:300px;
+            margin:30px 0 0 360px;
+            min-height:250px;
+            line-height:27px;
         }
         div.bio > div.right > div.line.name{
-            padding:15px 0;
+            padding:25px 0;
             line-height:40px;
         }
         div.bio > div.right > div.name > span.name, div.bio > div.right > div.name > span.chineseName{
-            font-size:2em;
+            font-size:1.7em;
             font-weight:bold;
         }
-        div.bio > div.right > div.name > span.misc{
-            font-size:1.5em;
-            font-weight:bold;
-        }
-        div.bio > div.right > div.line.affliation{
-            padding:8px 0;
-        }  
-
     </style>
 
     <div class="content bio">
         <div class="left">
-            <img class='me' src="./images/jieru.jpg"></img><br/>
+            <img class='me' src="./images/image.jpg"></img><br/>
         </div>
         <div class="right">
             <div class="line name">
@@ -144,15 +153,15 @@
                 <p> Ph.D. at HKUST</p>
                 <a href="https://www.ece.ust.hk/" target="_blank">Department of Electronic and Computer Engineering</a></br>
                 <a href="https://www.ust.hk/">The Hong Kong University of Science and Technology</a></br>
-            </div>                       
-            <div class="affliation">
+                <p>  </p>
                 <p>Email: jzhaoao@connect.ust.hk</p>
                 <p>Office: Room 3654, Lift 31-32 </p>
-            </div> 
+            </div>  
         </div>
+        <hr class="new">
     </div>
 
-    <!-- quick link and intro -->
+    <!-- quick link -->
     <style type="text/css">
         div.quickLink{
             font-size:1.2em;
@@ -167,32 +176,155 @@
             /* border-radius:5px; */
             /* box-shadow:2px 2px 1px silver; */
             width:140px;
-            margin-right:50px;
+            margin-right:30px;
+            margin-left:20px;
             /* margin-top:20px; */
             cursor:pointer;
+            border-top:1px silver solid;
         }
     </style>
-    <div class="content quickLink">
+
+    <!-- <div class="content quickLink">
+        <a class="block" href="#biography">Biography</a>
+        <a class="block" href="#honors">Honors</a>
         <a class="block" href="#publications">Publications</a>
-        <a class="block" href="#honors">Awards</a>
-        <a class="block" href="#research">Research</a>
-        <a class="block" href="" target="_blank">Code</a>
         <a class="block" href="#teaching">Talks</a>
-    </div>   
-
-
-    <!-- <div id="bio" class="center_align main_blocks">
-		<div class="subtitle">Short Bio</div>
-		<p>I am a research postgraduate student in <a href="http://sccpu2.cse.ust.hk/castle/index.html">CASTLE group</a>, pursuing my Ph.D degree under the supervision of <a href="http://www.cse.ust.hk/faculty/scc/">Prof. S.C. Cheung</a> at HKUST. My research interests include but not limited to software analysis and testing, mining code repositories. My current work focuses on taming compatibility issues raised by Android fragmentation.</p>
-		<p>I visted <a href="http://opera.ucsd.edu">Opera</a> at UCSD from Feb 2019 to Aug 2019.</p>
-		<p>I obtained my B.Sc. degree in the department of Computer Science and Technology at Nanjing University (2011-2015).</p>
-
-    </div>
+    </div>    -->
     
-    <h2>Biography</h2>
-    <p>I obtained my Ph.D. from the <a href="https://www.cse.cuhk.edu.hk">Department of Computer Science and Engineering</a> of <a href="https://www.cuhk.edu.hk">The Chinese University of Hong Kong (CUHK)</a> in 2019.
-    My advisor was Prof. <a href="http://www.cse.cuhk.edu.hk/~fyyoung/">Evangeline F. Y. Young</a>.
-    Before that, I received my bachelor degree in the Department of Electronic and Communication Engineering from <a href="http://www.sysu.edu.cn/2012/en/index.htm">Sun Yat-sen University (SYSU)</a> in 2015.</p>     -->
+    <div class="content intro" name='biography'>
+        <a name="biography"></a>
+        <div class='title'>Biography</div>
+        I am Jieru Zhao, a Ph.D. student from <b><a href="https://www.ece.ust.hk/">the Department of Electronic and Computer Engineering</a></b>
+        at <b><a href="https://www.ust.hk/">HKUST</a></b>, where I am advised by <b><a href="https://eeweiz.home.ece.ust.hk/">Prof. Wei Zhang</a></b> and
+        working in <b><a href="https://eeweiz.home.ece.ust.hk/">Reconfigurable Computing Systems Lab</a></b>. Before that, I obtained my bachelor degree from <a href="https://ese.nju.edu.cn/">the School of Electronic Science and Engineering</a> at <a href="https://www.nju.edu.cn/en/main.psp">Nanjing Univerity</a> in 2015. <br/>
+        My research interests include but not limited to reconfigurable computing, electronic design automation (EDA) and embedded systems. My current work focuses on deploying DNNs on hardware efficiently. <br/>
+        <hr class="new">
+    </div>
+
+    <div class="content honors" name='honors'>
+        <a name="honors"></a>
+        <div class="title">Honors and Awards</div>
+        <ul>
+            <li>HKUST SENG Academic Award for 2018-2019 (School of Engineering, Top Rpg Award)</li>
+            <li>CASES Best Paper Nomination in 2018 (9 out of 270 submissions)</li>
+            <li>ICCAD Best Paper Award in 2017 (2 out of 399 submissions) </li>
+            <li>Hong Kong PhD Fellowship Scheme from 2015 to 2019 (Top 3% among more than 4000 applications)</li>
+            <li>Outstanding Graduate of Naning University in 2015</li>
+            <li>Canadian Globalink Research Internship Award in 2014</li>
+            <li>National Scholarship of China (Top 2%) in 2013</li>
+            <li>Outstanding Student of Nanjing University (Top 5%) in 2012, 2013</li>
+        </ul>
+        <hr class="new">
+    </div>
+
+    <div class="content publications" name='publications'>
+        <a name="publications"></a>
+        <div class="title">Publications</div>
+        <ol>
+            <li>
+                <b><font color=#4682B4>[FPL 2020]</font></b> <b><font color=#08306b>FP-Stereo: Hardware-Efficient Stereo Vision for Embedded Applications</font></b> 
+                <br><b>Jieru Zhao</b>, Tingyuan Liang, Liang Feng, Wenchao Ding, Sharad Sinha, Wei Zhang and Shaojie Shen,
+                <br> in <i>IEEE International Conference on Field Programmable Logic and Applications</i>, 2020. To appear. (long oral presentation, acceptance rate: 24/158=15.2%)
+                <br> <font color="grey">[Paper]</font> <font color="grey">[Slides]</font> <font color="grey">[Code]</font>
+            </li> 
+
+            <li>
+                <b><font color=#4682B4>[ASP-DAC 2020]</font></b> <b><a href="https://ieeexplore.ieee.org/document/9045442">HL-Pow: A Learning-Based Power Modeling Framework for High-Level Synthesis</a></b>
+                <br>Zhe Lin, <b>Jieru Zhao</b>, Sharad Sinha and Wei Zhang, 
+                <br>in <i>IEEE Asia and South Pacific Design Automation Conference</i>, 2020. (acceptance rate: 86/250=34.4%)
+                <br>[<a href="camera_ready/HL-Pow.pdf">Paper</a>] [<a href="slides/ASPDAC_HL-Pow.pptx">Slides</a>]                
+            </li>                      
+
+            <li>
+                <b><font color=#4682B4>[TCAD 2019]</font></b> <b><a href="https://ieeexplore.ieee.org/document/8695879">Performance Modeling and Directives Optimization for High-level Synthesis on FPGA</a></b>
+                <br><b>Jieru Zhao</b>, Liang Feng, Sharad Sinha, Wei Zhang, Yun Liang and Bingsheng He,
+                <br>in <i>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</i>, 2019.
+                <br>[<a href="camera_ready/performance_model.pdf">Paper</a>] [<a href="https://github.com/zjru/COMBA">Code</a>]
+            </li>
+
+            <li>
+                <b><font color=#4682B4>[DAC 2019]</font></b> <b><a herf="https://ieeexplore.ieee.org/document/8807006">LAMA: Link-Aware Hybrid Management for Memory Accesses in Emerging CPU-FPGA Platforms</a></b>
+                <br> Liang Feng, <b>Jieru Zhao</b>, Tingyuan Liang, Sharad Sinha and Wei Zhang,
+                <br>in <i>ACM/IEEE Design Automation Conference</i>, 2019. (acceptance rate: 202/1068 = 18.9%)
+                <br>[<a href="camera_ready/LAMA_DAC.pdf">Paper</a>]
+            </li>
+
+            <li>
+                <b><font color=#4682B4>[ICCAD 2019]</font></b> <b><a herf="https://ieeexplore.ieee.org/document/8942136">Hi-ClockFlow: Multi-Clock Dataflow Automation and Throughput Optimization in High-Level Synthesis</a></b>
+                <br> Tingyuan Liang, <b>Jieru Zhao</b>, Liang Feng, Sharad Sinha and Wei Zhang,
+                <br>in <i>IEEE/ACM International Conference on Computer-Aided Design</i>, 2019. (acceptance rate: 94/394 = 23.9%)
+                <br>[<a href="camera_ready/Hi-ClockFlow.pdf">Paper</a>] [<a href="https://github.com/zslwyuan/Hi-ClockFlow">Code</a>]
+            </li>
+
+            <li>
+                <b><font color=#4682B4>[DATE 2019]</font></b> <b><a herf="https://ieeexplore.ieee.org/abstract/document/8714724">Machine Learning Based Routing Congestion Prediction in FPGA High-Level Synthesis</a></b>
+                <br><b>Jieru Zhao</b>, Tingyuan Liang, Sharad Sinha and Wei Zhang,
+                <br>in <i>IEEE Design, Automation and Test in Europe Conference and Exhibition </i>, 2019. (long oral presentation, acceptance rate: 202/834 = 24.2%)
+                <br>[<a href="camera_ready/Routing_DATE.pdf">Paper</a>] [<a href="slides/DATE_Routing.pptx">Slides</a>]
+            </li> 
+
+            <li>
+                <b><font color=#4682B4>[FPGA 2019]</font></b> <b><a herf="https://dl.acm.org/doi/10.1145/3289602.3293973">A Hybrid Data-Consistent Framework for Link-Aware Access Management in Emerging CPU-FPGA Platforms</a></b>
+                <br> Liang Feng, <b>Jieru Zhao</b>, Tingyuan Liang, Sharad Sinha and Wei Zhang,
+                <br>in <i>ACM/SIGDA International Symposium on Field-Programmable Gate Arrays</i>, 2019. 
+                <br><font color="grey">[Poster]</font>
+               <!-- <br>[<a href="camera_ready/Routing_DATE.pdf">Paper</a>] -->
+            </li> 
+
+            <li>
+                <b><font color=#4682B4>[CASES 2018]</font></b> <b><a herf="https://ieeexplore.ieee.org/document/8493498">Hi-DMM: High-Performance Dynamic Memory Management in High-Level Synthesis</a></b>
+                <br>Tingyuan Liang, <b>Jieru Zhao</b>, Liang Feng, Sharad Sinha and Wei Zhang,
+                <br>in <i>IEEE International Conference on Compilers, Architectures, and Synthesis for Embedded Systems</i>, 2018. (journal-track, acceptance rate: 69/270 = 25.5%)
+                <br>Published in <i>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</i>, 2018. 
+                <br><b><font color="red">Best Paper Nomination</font></b> 
+                <br>[<a href="camera_ready/Hi-DMM.pdf">Paper</a>] [<a href="">Slides</a>] [<a href="https://github.com/zslwyuan/Hi-DMM">Code</a>] 
+            </li>
+
+            <li>
+                <b><font color=#4682B4>[ICCAD 2017]</font></b> <b><a herf="https://ieeexplore.ieee.org/document/8203809">COMBA: A Comprehensive Model-Based Analysis Framework for High Level Synthesis of Real Applications</a></b>
+                <br><b>Jieru Zhao</b>, Liang Feng, Sharad Sinha, Wei Zhang, Yun Liang and Bingsheng He,
+                <br>in <i> IEEE/ACM International Conference on Computer-Aided Design</i>, 2017. (acceptance rate: 105/399 = 26.3%)
+                <br><b><font color="red">Best Paper Award</font></b>
+                <br>[<a href="camera_ready/COMBA.pdf">Paper</a>] [<a href="slides/ICCAD_COMBA.pptx">Slides</a>] [<a href="https://github.com/zjru/COMBA">Code</a>]
+            </li> 
+        </ol>
+        <hr class="new">
+    </div>
+
+    <div class="content service" name='Academic Services'>
+        <div class="title">Academic Services</div>
+        <ul>
+            <li>Judge for EDAthon 2019 contest.</li>
+            <li>Judge for EDAthon 2018 contest.</li>
+            <li>Student Volunteer for IEEE ISVLSI 2018. </li>
+            <li>Reviewer for top conferences in the areas of EDA and FPGA, including DAC, ICCAD, DATE, ICCD, FPGA, FCCM, FPL, etc.</li>
+            <li>Reviewer for Transactions on Computer-Aided Design of Integrated Circuits and Systems.</li>
+            <li>Reviewer for Transactions on Very Large Scale Integration (VLSI) Systems.</li>
+            <li>Reviewer for Transactions on Reconfigurable Technology and Systems.</li>
+        </ul>
+        <hr class="new">
+    </div>    
+
+    <div class="content teaching" name='Teaching'>
+        <div class="title">Teaching</div>
+        <ul>
+            <li>ELEC 4320 FPGA-based Design: From Theory to Practice, teaching assistant, 2016-2017 Fall.</li>
+            <li>ELEC 2300 Computer Organization, teaching assistant, 2015-2016 Spring.</li>
+        </ul>
+        <hr class="new">
+    </div>  
+
+    <div class="content talks" name='Talks'>
+        <div class="title">Talks</div>
+        <ul>
+            <li>Invited talk in Huawei HiSilicon, Shenzhen, China. Aug. 2019</li>
+            <li>Oral presentation in DATE 2019, Florence, Italy. Mar. 2019</li>
+            <li>Invited talk in CTC best paper forum 2018, Harbin, China. Aug. 2018</li>
+            <li>Invited talk in ICDE 2018, Hong Kong, China. Jun. 2018</li>
+            <li>Oral presentation in ICCAD 2017, Irvine, USA. Nov. 2017</li>
+        </ul>
+        <hr class="new">
+    </div>  
 
     <!-- <div id="footer">
 		Maintained by Jieru Zhao</br>
